@@ -8,15 +8,49 @@ body {
     justify-content: center;
     align-items: center;
     background: url('images/matt.jpg') no-repeat center center fixed;
-    background-size: 60%; /* Shrinks the image to 90% of its original size */
+    background-size: 60%; /* Shrinks the image to 60% of its original size */
     background-position: center; /* Keeps the image centered */
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        background-size: 80%; /* Resize the image for smaller screens */
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 8px; /* Smaller button padding */
+    }
+}
+
+/* Media query for very small screens (e.g., portrait mobile phones) */
+@media (max-width: 480px) {
+    body {
+        background-size: 120%; /* Make the image slightly larger on very small screens */
+    }
+
+    .container {
+        padding: 10px; /* Even smaller padding */
+    }
+
+    button {
+        font-size: 12px; /* Further reduce button font size */
+        padding: 6px; /* Even smaller button padding */
+    }
+}
+
 .container {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     color: white;
 }
+
 button {
     margin: 10px 0;
     padding: 10px;
@@ -28,6 +62,7 @@ button {
     font-weight: bold;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: #ff9900;
 }
