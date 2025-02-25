@@ -8,7 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     background: url('https://raw.githubusercontent.com/pilllgrummm/how-many-fuckin-beers-should-matt-drink/refs/heads/main/matt.jpg?token=GHSAT0AAAAAAC7SJM5KZ7ISDCARFLXOPCVEZ56ICJA') no-repeat center center fixed;
-    background-size: cover;
+    background-size: 60%; /* Shrinks the image to 90% of its original size */
+    background-position: center; /* Keeps the image centered */
 }
 .container {
     background: rgba(0, 0, 0, 0.5);
